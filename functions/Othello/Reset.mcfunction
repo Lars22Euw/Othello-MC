@@ -32,5 +32,5 @@ scoreboard players set Moves Othello2 0
 scoreboard players set Turn Othello2 0
 scoreboard players set Black Othello2 0
 scoreboard players set White Othello2 0
-function Othello:CheckBlack
-function Othello:preBlack
+function Othello:Black/Check
+function Othello:Black/pre
