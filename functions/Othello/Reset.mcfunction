@@ -1,10 +1,8 @@
 tellraw @a ["",{"text":"[Othello] ","color":"dark_green"},{"text":"Resetting the Game!","color":"green"}]
 kill @e[type=armor_stand,tag=Othello,name=!OthelloOrigin]
 kill @e[type=ocelot,tag=Othello]
-summon ocelot -20 57 -20 {CustomName:"WhiteCat",CustomNameVisible:1,Tags:["Othello"],CatType:3,Sitting:1,Invulnerable:1,NoAI:1,Silent:1,Rotation:[235f,0f]}
-summon ocelot -7 57 -33 {CustomName:"BlackCat",CustomNameVisible:1,Tags:["Othello"],CatType:1,Sitting:1,Invulnerable:1,NoAI:1,Silent:1,Rotation:[45f,0f]}
-#summon armor_stand ~ ~1 ~ {CustomName:"WhiteCatX",CustomNameVisible:1,Tags:["Othello","Count"]}
-#summon armor_stand ~ ~1 ~ {CustomName:"WhiteCatZ",CustomNameVisible:1,Tags:["Othello","Count"]}
+#execute @e[type=armor_stand,name=OthelloOrigin] ~ ~ ~ summon ocelot ~-3 ~ ~10 {CustomName:"WhiteCat",CustomNameVisible:1,Tags:["Othello"],CatType:3,Sitting:1,Invulnerable:1,NoAI:1,Silent:1,Rotation:[235f,0f]}
+#execute @e[type=armor_stand,name=OthelloOrigin] ~ ~ ~ summon ocelot ~10 ~ ~-3 {CustomName:"BlackCat",CustomNameVisible:1,Tags:["Othello"],CatType:1,Sitting:1,Invulnerable:1,NoAI:1,Silent:1,Rotation:[45f,0f]}
 execute @e[type=armor_stand,name=OthelloOrigin] ~ ~ ~ summon armor_stand ~2 ~ ~2 {CustomName:"Border",Marker:1b,Invisible:1b,Tags:["Othello"],NoGravity:1b}
 execute @e[type=armor_stand,name=OthelloOrigin] ~ ~ ~ summon armor_stand ~2 ~ ~3 {CustomName:"Border",Marker:1b,Invisible:1b,Tags:["Othello"],NoGravity:1b}
 execute @e[type=armor_stand,name=OthelloOrigin] ~ ~ ~ summon armor_stand ~2 ~ ~4 {CustomName:"Border",Marker:1b,Invisible:1b,Tags:["Othello"],NoGravity:1b}
@@ -30,7 +28,8 @@ scoreboard players tag @r[tag=OthelloSetup,c=1] add Black
 scoreboard players tag @r[tag=OthelloSetup,c=-1] add White
 scoreboard players set Moves Othello2 0
 scoreboard players set Turn Othello2 0
-scoreboard players set Black Othello2 0
-scoreboard players set White Othello2 0
+scoreboard players set Black Othello 0
+scoreboard players set White Othello 0
+scoreboard objectives setdisplay sidebar Othello
 function Othello:Black/Check
 function Othello:Black/pre

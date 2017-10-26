@@ -14,7 +14,7 @@ execute @e[type=armor_stand,name=CheckWest] ~ ~ ~ detect ~ ~ ~ air 0 scoreboard 
 execute @e[type=armor_stand,name=CheckNorthWest] ~ ~ ~ detect ~ ~ ~ air 0 scoreboard players tag @e[c=1,name=Border] add NorthWest
 execute @e[type=armor_stand,name=CheckNorth] ~ ~ ~ detect ~ ~ ~ air 0 scoreboard players tag @e[c=1,name=Border] add North
 execute @e[type=armor_stand,name=CheckNorthEast] ~ ~ ~ detect ~ ~ ~ air 0 scoreboard players tag @e[c=1,name=Border] add NorthEast
-fill -17 56 -30 -10 56 -23 minecraft:monster_egg
+execute @e[type=armor_stand,name=OthelloOrigin] ~ ~ ~ fill ~ ~-1 ~ ~7 ~-1 ~7 minecraft:monster_egg
 execute @e[type=armor_stand,name=Border,tag=East] ~ ~ ~ setblock ~ ~-1 ~ stone 6
 execute @e[type=armor_stand,name=Border,tag=SouthEast] ~ ~ ~ setblock ~ ~-1 ~ stone 6
 execute @e[type=armor_stand,name=Border,tag=South] ~ ~ ~ setblock ~ ~-1 ~ stone 6
@@ -24,5 +24,5 @@ execute @e[type=armor_stand,name=Border,tag=NorthWest] ~ ~ ~ setblock ~ ~-1 ~ st
 execute @e[type=armor_stand,name=Border,tag=North] ~ ~ ~ setblock ~ ~-1 ~ stone 6
 execute @e[type=armor_stand,name=Border,tag=NorthEast] ~ ~ ~ setblock ~ ~-1 ~ stone 6
 execute @e[tag=Checker] ~ ~ ~ detect ~ ~ ~ air 0 kill @s
-execute @e[name=OthelloOrigin] ~ ~7 ~ blockdata ~ ~ ~ {auto:1b}
-execute @e[name=OthelloOrigin] ~ ~7 ~ blockdata ~ ~ ~ {auto:0b}
+execute @e[name=OthelloOrigin] ~ ~7 ~1 blockdata ~ ~ ~ {auto:1b}
+execute @e[name=OthelloOrigin] ~ ~7 ~1 blockdata ~ ~ ~ {auto:0b}

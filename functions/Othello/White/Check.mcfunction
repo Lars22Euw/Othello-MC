@@ -16,5 +16,5 @@ function othello:White/find
 function othello:White/find
 function othello:returnMaster
 #Prüfe Moves, wenn 0 add SkipWhite
-execute @e[type=armor_stand,name=OthelloOrigin] ~ ~7 ~5 blockdata ~ ~ ~ {auto:1b}
-execute @e[type=armor_stand,name=OthelloOrigin] ~ ~7 ~5 blockdata ~ ~ ~ {auto:0b}
+execute @e[type=armor_stand,name=OthelloOrigin] ~ ~7 ~6 blockdata ~ ~ ~ {auto:1b}
+execute @e[type=armor_stand,name=OthelloOrigin] ~ ~7 ~6 blockdata ~ ~ ~ {auto:0b}
