@@ -5,7 +5,7 @@ function othello:return
 function othello:return
 function othello:return
 function othello:return
-function othello:return
+#function othello:return
 execute @e[type=armor_stand,name=CheckEast] ~ ~ ~ detect ~ ~ ~ air 0 scoreboard players tag @e[c=1,name=Border] add East
 execute @e[type=armor_stand,name=CheckSouthEast] ~ ~ ~ detect ~ ~ ~ air 0 scoreboard players tag @e[c=1,name=Border] add SouthEast
 execute @e[type=armor_stand,name=CheckSouth] ~ ~ ~ detect ~ ~ ~ air 0 scoreboard players tag @e[c=1,name=Border] add South

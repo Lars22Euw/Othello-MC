@@ -1,3 +1,4 @@
+execute @e[type=armor_stand,name=OthelloOrigin] ~ ~ ~ blockdata ~ ~7 ~2 {auto:0b}
 tellraw @a ["",{"text":"[Othello] ","color":"dark_green"},{"text":"Resetting the Game!","color":"green"}]
 kill @e[type=armor_stand,tag=Othello,name=!OthelloOrigin]
 kill @e[type=ocelot,tag=Othello]
@@ -24,12 +25,13 @@ scoreboard players tag @a remove Black
 scoreboard players tag @a remove White
 scoreboard players tag @a remove OthelloSetup
 scoreboard players tag @a[c=2] add OthelloSetup
-scoreboard players tag @r[tag=OthelloSetup,c=1] add Black
-scoreboard players tag @r[tag=OthelloSetup,c=-1] add White
+scoreboard players tag @p[tag=OthelloSetup] add Black
+scoreboard players tag @p[tag=OthelloSetup,c=-1] add White
 scoreboard players set Moves Othello2 0
 scoreboard players set Turn Othello2 0
 scoreboard players set Black Othello 0
 scoreboard players set White Othello 0
 scoreboard objectives setdisplay sidebar Othello
+gamemode adventure @a[tag=OthelloSetup]
 function Othello:Black/Check
 function Othello:Black/pre
