@@ -5,3 +5,4 @@ scoreboard objectives remove Othello
 scoreboard objectives remove Othello2
 scoreboard objectives remove OthelloWins
 scoreboard objectives remove OthelloCarpet
+scoreboard objectives remove OthelloTrigger

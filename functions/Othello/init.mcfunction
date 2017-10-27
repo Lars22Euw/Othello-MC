@@ -6,6 +6,7 @@ scoreboard objectives add Othello dummy
 scoreboard objectives add Othello2 dummy Othello data:
 scoreboard objectives add OthelloWins dummy Othello Wins:
 scoreboard objectives add OthelloRelog stat.leaveGame
+scoreboard objectives add OthelloTrigger trigger Reset:
 gamerule doTileDrops false
 entitydata @e[type=armor_stand,name=OthelloOrigin] {Invulnerable:0b,Invisible:1b,Tags:["Origin","Othello"],Marker:1b,CustomName:"OthelloOrigin"}
 execute @e[type=armor_stand,name=OthelloOrigin] ~ ~-2 ~ fill ~-8 ~ ~-8 ~15 ~ ~15 snow 0 replace air

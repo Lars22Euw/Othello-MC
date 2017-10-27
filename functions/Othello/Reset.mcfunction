@@ -22,6 +22,8 @@ execute @e[name=OthelloOrigin] ~ ~ ~ fill ~ ~ ~ ~7 ~ ~7 air
 execute @e[name=OthelloOrigin] ~ ~ ~ fill ~3 ~ ~3 ~4 ~ ~4 carpet 0
 execute @e[name=OthelloOrigin] ~ ~ ~ setblock ~3 ~ ~3 carpet 15
 execute @e[name=OthelloOrigin] ~ ~ ~ setblock ~4 ~ ~4 carpet 15
+scoreboard objectives remove OthelloTrigger
+scoreboard objectives add OthelloTrigger trigger Reset:
 scoreboard players tag @a remove Black
 scoreboard players tag @a remove White
 scoreboard players tag @a remove OthelloSetup
