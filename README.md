@@ -8,4 +8,4 @@ Then execute `/reload` and `/function othello:init` in your world.
 
 ### Credits:
 Thanks to TheLordCthulhu for his build.
-Commands done by Lars22 and Dragongames_dev.
+Commands by Lars22 and Dragongames_dev.
