@@ -5,5 +5,7 @@ Just drop all Mcfunction files into the Othello folder under `.minecraft/saves/W
 and add the structure files to the `WORLDNAME/structures`.
 
 Then execute `/reload` and `/function othello:init` in your world.
+
+### Credits:
 Thanks to TheLordCthulhu for his build.
 Commands done by Lars22 and Dragongames_dev.
