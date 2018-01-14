@@ -4,7 +4,7 @@ The board game Othello/Reversi implemented with Minecraft functions for Version 
 Just drop all Mcfunction files into the Othello folder under `.minecraft/saves/WORLDNAME/data/functions/Othello`
 and add the structure files to the `WORLDNAME/structures`.
 
-Then execute `/reload` and `/function othello:init` in your world.
+Then execute ``/reload`` and ``/function othello:init`` in your world.
 
 ### Credits:
 Thanks to TheLordCthulhu for his build.
