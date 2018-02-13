@@ -13,8 +13,8 @@ function othello:Black/find
 function othello:Black/find
 function othello:Black/find
 function othello:Black/find
-function othello:Black/find
+#function othello:Black/find
 function othello:returnMaster
 #Prüfe Moves, wenn 0 add SkipBlack
-execute @e[type=armor_stand,name=OthelloOrigin] ~ ~7 ~5 blockdata ~ ~ ~ {auto:1b}
-execute @e[type=armor_stand,name=OthelloOrigin] ~ ~7 ~5 blockdata ~ ~ ~ {auto:0b}
+execute @e[name=OthelloOrigin] ~ ~7 ~5 blockdata ~ ~ ~ {auto:1b}
+execute @e[name=OthelloOrigin] ~ ~7 ~5 blockdata ~ ~ ~ {auto:0b}
