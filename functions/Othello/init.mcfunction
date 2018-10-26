@@ -8,6 +8,10 @@ scoreboard objectives add OthelloWins dummy Othello Wins:
 scoreboard objectives add OthelloRelog stat.leaveGame
 scoreboard objectives add OthelloTrigger trigger Reset:
 gamerule doTileDrops false
+gamerule doMobSpawning false
+gamerule sendCommandFeedback false
+gamerule logAdmincommands false
+gamerule commandBlackoutput false
 entitydata @e[name=OthelloOrigin] {Invulnerable:0b,Invisible:1b,Tags:["Origin","Othello"],Marker:1b,CustomName:"OthelloOrigin"}
 execute @e[name=OthelloOrigin] ~ ~-2 ~ fill ~-8 ~ ~-8 ~15 ~ ~15 snow 0 replace air
 execute @e[name=OthelloOrigin] ~ ~-1 ~ setblock ~4 ~ ~4 minecraft:structure_block 1 replace {name:"OthelloQuarter",rotation:"NONE",mirror:"NONE",mode:"LOAD",ignoreEntities:1b}
