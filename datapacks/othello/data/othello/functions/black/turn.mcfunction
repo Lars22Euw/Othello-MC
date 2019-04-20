@@ -1,0 +1,10 @@
+execute as @e[tag=Turn] at @s if block ~ ~-1 ~ black_carpet run kill @s
+execute as @e[tag=Turn] at @s if block ~ ~-1 ~ white_carpet run setblock ~ ~-1 ~ black_carpet
+execute as @e[name=TurnNorthEast] at @s run tp @s ~1 ~ ~-1
+execute as @e[name=TurnNorth] at @s run tp @s ~ ~ ~-1
+execute as @e[name=TurnNorthWest] at @s run tp @s ~-1 ~ ~-1
+execute as @e[name=TurnWest] at @s run tp @s ~-1 ~ ~
+execute as @e[name=TurnSouthWest] at @s run tp @s ~-1 ~ ~1
+execute as @e[name=TurnSouth] at @s run tp @s ~ ~ ~1
+execute as @e[name=TurnSouthEast] at @s run tp @s ~1 ~ ~1
+execute as @e[name=TurnEast] at @s run tp @s ~1 ~ ~
