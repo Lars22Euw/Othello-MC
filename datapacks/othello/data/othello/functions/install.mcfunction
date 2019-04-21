@@ -9,6 +9,7 @@ scoreboard objectives add othello2 dummy ["Othello data:"]
 scoreboard objectives add othello.wins dummy ["Othello Wins:"]
 scoreboard objectives add othello.relog minecraft.custom:minecraft.leave_game
 scoreboard objectives add othello.trigger trigger ["Reset:"]
+scoreboard objectives add othello.
 gamerule doTileDrops false
 gamerule doMobSpawning false
 gamerule sendCommandFeedback false
