@@ -1,5 +1,4 @@
-execute as @p[score_OthelloCarpet_min=1,tag=Black] at @s run function othello:Black/Placed
-execute as @a[score_OthelloRelog_min=1] at @s run function Othello:relog
+# waits for black player to place a carpet.
+execute as @p[scores={othello.carpet=1..},tag=othello.black] at @s run function othello:black/placed
 data merge entity @e[type=Item] {PickupDelay:0s}
 #effect give @a[m=!1] minecraft:saturation 5 2 true
-#main:relog benutzt stat.leaveGame "Relog"

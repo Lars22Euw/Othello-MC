@@ -9,4 +9,4 @@ scoreboard objectives remove othello2
 scoreboard objectives remove othello.wins
 scoreboard objectives remove othello.relog
 scoreboard objectives remove othello.trigger
-scoreboard objectives remove othello.
+#scoreboard objectives remove othello.
